@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎓 EduPortal
+# <img src="https://img.icons8.com/color/40/graduation-cap.png"/> EduPortal
 ### College Academic Management System
 
 ![Node.js](https://img.shields.io/badge/Node.js-v18%2B-339933?style=for-the-badge&logo=node.js&logoColor=white)
@@ -15,24 +15,24 @@
 
 </div>
 
-## 📋 Table of Contents
+## <img src="https://img.icons8.com/color/24/list.png"/> Table of Contents
 
-- [Overview](#-overview)
-- [Features](#-features)
-- [Architecture](#-architecture)
-- [Project Structure](#-project-structure)
-- [Prerequisites](#-prerequisites)
-- [Installation & Setup](#-installation--setup)
-- [Environment Variables](#-environment-variables)
-- [Running the Application](#-running-the-application)
-- [API Reference](#-api-reference)
-- [Database Schema](#-database-schema)
-- [Default Credentials](#-default-credentials)
-- [Tech Stack](#-tech-stack)
+- [Overview](#overview)
+- [Features](#features)
+- [Architecture](#architecture)
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Installation & Setup](#installation--setup)
+- [Environment Variables](#environment-variables)
+- [Running the Application](#running-the-application)
+- [API Reference](#api-reference)
+- [Database Schema](#database-schema)
+- [Default Credentials](#default-credentials)
+- [Tech Stack](#tech-stack)
 
 ---
 
-## 🌟 Overview
+## <img src="https://img.icons8.com/color/24/overview-pages-3.png"/> Overview
 
 **EduPortal** is a web-based college academic management system built with a **polyglot persistence** architecture — combining a PostgreSQL relational database for structured academic records with a MongoDB document database for flexible, semi-structured data such as leave requests and course materials.
 
@@ -40,9 +40,9 @@ The system supports two distinct user roles — **Student** and **Faculty** — 
 
 ---
 
-## ✨ Features
+## <img src="https://img.icons8.com/color/24/star.png"/> Features
 
-### 👨‍🎓 Student Portal
+### <img src="https://img.icons8.com/color/20/student-center.png"/> Student Portal
 | Feature | Description |
 |---------|-------------|
 | **Dashboard** | GPA overview, attendance summary, notifications, and course enrollment |
@@ -52,7 +52,7 @@ The system supports two distinct user roles — **Student** and **Faculty** — 
 | **Materials** | Browse and download course materials uploaded by faculty |
 | **Notifications** | Receive real-time academic notifications |
 
-### 👨‍🏫 Faculty Portal
+### <img src="https://img.icons8.com/color/20/teacher.png"/> Faculty Portal
 | Feature | Description |
 |---------|-------------|
 | **Dashboard** | Summary of total students, active classes, pending leaves, and uploaded materials |
@@ -64,7 +64,7 @@ The system supports two distinct user roles — **Student** and **Faculty** — 
 
 ---
 
-## 🏗️ Architecture
+## <img src="https://img.icons8.com/color/24/blueprint.png"/> Architecture
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -91,7 +91,6 @@ The system supports two distinct user roles — **Student** and **Faculty** — 
 │  PostgreSQL │          │    MongoDB     │
 │  (Sequelize │          │  (Mongoose)    │
 │    ORM)     │          │                │
-│             │          │                │
 │  students   │          │  leave_requests│
 │  faculty    │          │  course_mats   │
 │  courses    │          │  audit_logs    │
@@ -109,7 +108,7 @@ The system supports two distinct user roles — **Student** and **Faculty** — 
 
 ---
 
-## 📁 Project Structure
+## <img src="https://img.icons8.com/color/24/folder-invoices.png"/> Project Structure
 
 ```
 EduPortal/
@@ -173,7 +172,7 @@ EduPortal/
 
 ---
 
-## ✅ Prerequisites
+## <img src="https://img.icons8.com/color/24/ok.png"/> Prerequisites
 
 Ensure the following are installed on your machine before proceeding:
 
@@ -189,7 +188,7 @@ Ensure the following are installed on your machine before proceeding:
 
 ---
 
-## 🚀 Installation & Setup
+## <img src="https://img.icons8.com/color/24/rocket.png"/> Installation & Setup
 
 ### Step 1 — Clone the Repository
 
@@ -223,7 +222,7 @@ cd backend
 cp .env.example .env   # or create it manually (see section below)
 ```
 
-Fill in your credentials — see [Environment Variables](#-environment-variables).
+Fill in your credentials — see [Environment Variables](#environment-variables).
 
 ### Step 4 — Install Backend Dependencies
 
@@ -253,7 +252,7 @@ Then navigate to `http://localhost:3000`.
 
 ---
 
-## 🔐 Environment Variables
+## <img src="https://img.icons8.com/color/24/lock-2.png"/> Environment Variables
 
 Create a file at `backend/.env` with the following content:
 
@@ -286,11 +285,11 @@ MONGO_URI=mongodb://localhost:27017/college_academic
 | `PG_DB` | PostgreSQL database name | `college_academic` |
 | `MONGO_URI` | MongoDB connection URI | `mongodb://localhost:27017/college_academic` |
 
-> ⚠️ **Never commit your `.env` file.** It is already included in `.gitignore`.
+> <img src="https://img.icons8.com/color/16/warning-shield.png"/> **Never commit your `.env` file.** It is already included in `.gitignore`.
 
 ---
 
-## ▶️ Running the Application
+## <img src="https://img.icons8.com/color/24/circled-play.png"/> Running the Application
 
 ### Start the Backend Server
 
@@ -320,7 +319,7 @@ Frontend available at: **`http://localhost:3000`**
 
 ---
 
-## 📡 API Reference
+## <img src="https://img.icons8.com/color/24/api-settings.png"/> API Reference
 
 All routes are prefixed with `/api`. Protected routes require the header:
 ```
@@ -383,7 +382,7 @@ Authorization: Bearer <token>
 
 ---
 
-## 🗄️ Database Schema
+## <img src="https://img.icons8.com/color/24/database.png"/> Database Schema
 
 ### PostgreSQL — Relational Tables
 
@@ -429,7 +428,7 @@ updated_at
 
 ---
 
-## 🔑 Default Credentials
+## <img src="https://img.icons8.com/color/24/key.png"/> Default Credentials
 
 If you ran `npm run seed`, the following demo accounts are available:
 
@@ -442,7 +441,7 @@ If you ran `npm run seed`, the following demo accounts are available:
 
 ---
 
-## 🛠️ Tech Stack
+## <img src="https://img.icons8.com/color/24/wrench.png"/> Tech Stack
 
 ### Backend
 | Technology | Purpose |
@@ -474,8 +473,3 @@ If you ran `npm run seed`, the following demo accounts are available:
 
 ---
 
-<div align="center">
-
-Built as a Database Management Systems (DBMS) course project · Semester 4
-
-</div>
